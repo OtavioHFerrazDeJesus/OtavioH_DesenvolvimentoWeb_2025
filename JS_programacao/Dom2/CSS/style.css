@@ -1,0 +1,10 @@
+.destacado{
+    background-color: darkblue;
+    color: white;
+
+    padding: 20px;
+    border-radius: 5px;
+}
+body{
+    font-family: "Comic Sans MS", "Comic Sans";
+}

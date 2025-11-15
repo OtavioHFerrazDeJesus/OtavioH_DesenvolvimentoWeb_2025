@@ -1,0 +1,12 @@
+body{
+    display: grid;
+    justify-content: center;
+}
+
+.botao{
+    border-radius: 10px;
+    width: 75%;
+}
+.texto{
+    width: 75%;
+}

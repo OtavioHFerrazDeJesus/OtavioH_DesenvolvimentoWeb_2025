@@ -1,0 +1,75 @@
+body{
+    font-family: 'Comic Sans MS';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #dbb2db;
+    padding-top: 10vh;
+}
+ul{
+    list-style: none;
+}
+.corpo{
+    display: flexbox;
+    border: solid, 2px;
+    border-radius: 15px;
+    height: 85vh;
+    justify-content: center;
+    background-color: #9fffff;
+    
+}
+
+.cabecalho{
+    height: 10vh;
+    width: 50vw;
+    text-align: center;
+    gap: 2px;
+    padding-bottom: 2.5vh;
+
+}
+.separador{
+    display: flex;
+    justify-content: center;
+    height: 75%;
+}
+.urgentes{
+    background-color: white;
+    border: #e0f707, solid;
+    border-radius: 8px;
+    width: 50%;
+    display: flexbox;
+    text-align: center;
+    height: auto;
+
+}
+
+.desurgentes{
+    background-color: white;
+    border: red,solid;
+    border-radius: 8px;
+    width: 50%;
+    display: flexbox;
+    text-align: center;
+    height: auto;
+}
+
+.btn{
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Comic Sans MS';
+}
+.apt{
+    width: 20%;
+    font-size: 80%;
+    margin-top: 2.5%;
+    margin-left: 40%;
+}
+
+.del{
+    margin-right: 20%;
+}
+
+li:nth-child(3n+1){background-color: #203acf;}
+li:nth-child(3n+2){background-color: #55f755;}
+li:nth-child(3n+3){background-color: #882b88;}
