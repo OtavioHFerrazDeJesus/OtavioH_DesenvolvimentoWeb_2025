@@ -1,0 +1,26 @@
+document.getElementById("formcadastro").addEventListener("submit",function(event){
+    event.preventDefault()
+    var nome = document.getElementById("nome").value
+    var idade = document.getElementById("idade").value
+
+    var aluno = {nome:nome,idade:idade}
+
+    var lista_alunos = JSON.parse(localStorage.getItem('listagem'))|| []
+    lista_alunos.push(aluno)
+    /*adicionar o aluno no local storage */
+    localStorage.setItem('listagem', JSON.stringify(lista_alunos))
+    document.getElementById("formcadastro").reset()
+    
+    exibir_alunos()
+})
+
+function exibir_alunos(){
+    var lista_alunos = JSON.parse(localStorage.getItem('listagem'))||[]
+    var output = document.getElementById("output")
+    output.innerHTML=''
+    for(let i = 0;i<lista_alunos.length;i++){
+        let li = document.createElement('li')
+        li.textContent="Nome: "+lista_alunos[i].nome+" Idade: "+lista_alunos[i].idade
+        output.appendChild(li)
+    }
+}
