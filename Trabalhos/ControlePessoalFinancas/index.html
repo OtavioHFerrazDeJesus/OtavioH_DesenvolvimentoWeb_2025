@@ -3,19 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+
     <title>Controle Pessoal de Finanças</title>
 </head>
 <body>
     <form id="formSalario">
         <label for="salario">Salario:</label>
-        <input type="number" id="salario" required>
+        <input type="number" id="salario" step="0.01" required>
         <button type="submit">Registrar Salário</button>
+        <br>
+        <br>
+    </form>
+    <form id="formDespesas">
+        <label for="valor">Valor: </label>
+        <input type="number" id="valor" step="0.01">
+        <br>
+        <br>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" >
+        <br>
+        <br>
+        <label for="data">Data: </label>
+        <input type="date" id="data" required>
+        <button type="submit" id="btnDespesa">Registrar Despesa</button>
+        <br>
     </form>
 
-    <ul id="output">
+    <ul id="despesas">
+        
+    </ul>
+    <ul id="resumo">
 
     </ul>
-
+    <button id="btnClear">Limpar</button>
+    
     <script rel="text/javascript" src="JS/script.js"></script>
 </body>
 </html>
