@@ -38,11 +38,11 @@ document.getElementById('formDespesas').addEventListener('submit',function(event
     
     valores[2] = valores[0]-valores[1]
 
-    alert(valores[2])
-    
-    
     localStorage.setItem('valores',JSON.stringify(valores))
+
+    mostrarValores()
 })
+
 
 function mostrarValores(){
     var valores = JSON.parse(localStorage.getItem('valores'))||[0,0,0]
