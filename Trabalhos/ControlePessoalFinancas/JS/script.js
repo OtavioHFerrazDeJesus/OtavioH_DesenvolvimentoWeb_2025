@@ -31,8 +31,6 @@ document.getElementById('formDespesas').addEventListener('submit',function(event
     
     //atualizando o total de despesas
     
-    var valores = JSON.parse(localStorage.getItem('valores'))||[0,0,0]
-    
     valores[1] = valores[1]+valor
     
     
@@ -47,7 +45,15 @@ document.getElementById('formDespesas').addEventListener('submit',function(event
 })
 
 function mostrarValores(){
+    var valores = JSON.parse(localStorage.getItem('valores'))||[0,0,0]
+    var despesas = JSON.parse(localStorage.getItem('despesas'))||[]
+    var output = document.getElementById('despesas')
 
+    for(let i=0;i<despesas.length;i++){
+        let li = document.createElement('li')
+        li.textContent = despesas[i].valor+" "+despesas[i].nome+" "+despesas[i].data
+        output.appendChild(li)
+    }
 }
 
 document.getElementById('btnClear').addEventListener('click',function(event){
