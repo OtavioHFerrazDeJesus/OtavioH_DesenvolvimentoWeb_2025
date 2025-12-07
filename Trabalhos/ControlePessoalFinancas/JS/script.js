@@ -68,3 +68,4 @@ document.getElementById('btnClear').addEventListener('click',function(event){
     }
     mostrarValores()
 })
+mostrarValores()
