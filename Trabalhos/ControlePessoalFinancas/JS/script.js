@@ -65,7 +65,8 @@ document.getElementById('btnClear').addEventListener('click',function(event){
 
         localStorage.removeItem('valores')
         localStorage.removeItem('despesas')
+        
     }
-    mostrarValores()
+    return mostrarValores()
 })
 mostrarValores()
