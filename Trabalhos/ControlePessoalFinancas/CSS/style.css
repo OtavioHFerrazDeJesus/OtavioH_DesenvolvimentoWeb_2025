@@ -96,3 +96,49 @@ header{
         list-style: none;
     }
 }
+
+
+@media (max-width: 768px) {
+
+    .corpo {
+        flex-direction: column; /* barra lateral em cima */
+    }
+
+    .barraLateral {
+        width: 100%;
+        height: 40px;  /* fica uma barra horizontal pequena */
+    }
+
+    .conteudo {
+        width: 100%;
+        height: auto;
+    }
+
+    .forms {
+        flex-direction: column; /* empilha os forms */
+        height: auto;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    #formSalario,
+    #formDespesas {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .resultados {
+        flex-direction: column; /* listas empilhadas */
+        height: auto;
+        padding: 10px;
+    }
+
+    .resultados > div {
+        width: 100%;
+    }
+
+    ul li {
+        font-size: 14px; /* letras menores no celular */
+    }
+}
