@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,65 @@
 
     <title>Controle Pessoal de Finanças</title>
 </head>
+
 <body>
-    <form id="formSalario">
-        <label for="salario">Salario:</label>
-        <input type="number" id="salario" step="0.01" required>
-        <button type="submit">Registrar Salário</button>
-        <br>
-        <br>
-    </form>
-    <form id="formDespesas">
-        <label for="valor">Valor: </label>
-        <input type="number" id="valor" step="0.01">
-        <br>
-        <br>
-        <label for="nome">Nome: </label>
-        <input type="text" id="nome" >
-        <br>
-        <br>
-        <label for="data">Data: </label>
-        <input type="date" id="data" required>
-        <button type="submit" id="btnDespesa">Registrar Despesa</button>
-        <br>
-    </form>
-    <button id="btnteste" onclick="mostrarTestes()">teste</button>
+    <header>
 
-    <ul id="despesas">
-        
-    </ul>
-    <ul id="resumo">
+    </header>
+    <div class="corpo">
+        <div class="barraLateral">
 
-    </ul>
-    <button id="btnClear">Limpar</button>
-    
-    <script rel="text/javascript" src="JS/script.js"></script>
+        </div>
+        <div class="conteudo">
+            <div class="forms">
+                <form id="formSalario">
+                    <span>
+                        <label for="salario">Salário:</label>
+                        <input type="number" id="salario" step="0.01">
+                    </span>
+                    <button type="submit" id="btnSalario">Registrar</button>
+
+                </form>
+                <form id="formDespesas">
+                    <span class="span_despesas">
+                        <label for="valor">Valor:</label>
+                        <input type="number" id="valor" step="0.01">
+
+                        <label for="nome">Nome:</label>
+                        <input type="text">
+                    </span>
+                    <span>
+                        <label for="data">Data:</label>
+                        <input type="date">
+                    </span>
+                    <button id="btnDespesas">Registrar</button>
+                </form>
+            </div>
+
+
+            <div class="resultados">
+
+                <div>
+                    <ul id="valores">
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ab. Eligendi exercitationem eos ut aut qui, debitis consequuntur maxime autem architecto eaque ipsam corrupti? Praesentium, accusamus quia! Explicabo, velit minus.
+                        </li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, voluptas eveniet! Error harum vel illo necessitatibus sit dolores voluptate numquam dignissimos tenetur. Esse cupiditate voluptas iure debitis ipsum illum explicabo!</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam provident deleniti odit ratione recusandae eius minima animi delectus autem eaque iusto nihil nesciunt, distinctio commodi quo quia architecto? Minus, animi?</li>
+                    </ul>
+
+                </div>
+                <div>
+                    <ul id="despesas">
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, nisi aliquid. Suscipit commodi enim excepturi in explicabo labore similique. Esse in perferendis debitis tempora nam quas adipisci, aliquam neque voluptatum!</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptatum quae perspiciatis corporis alias fugit officiis illo, quis amet quisquam repudiandae dicta earum possimus rem at id nostrum quos facere!</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, rem quidem enim aliquam consequuntur dolorum accusamus porro praesentium quas placeat expedita nulla non atque veniam eaque dolore odit ipsa deserunt.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
