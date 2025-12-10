@@ -11,11 +11,10 @@
 
 <body>
     <header>
-
+        <button id="btnClear"><img src="SRC/trash-empty.svg" alt=""></button>
     </header>
     <div class="corpo">
         <div class="barraLateral">
-
         </div>
         <div class="conteudo">
             <div class="forms">
@@ -33,33 +32,28 @@
                         <input type="number" id="valor" step="0.01">
 
                         <label for="nome">Nome:</label>
-                        <input type="text">
+                        <input type="text" id="nome">
                     </span>
                     <span>
                         <label for="data">Data:</label>
-                        <input type="date">
+                        <input type="date" id="data">
                     </span>
-                    <button id="btnDespesas">Registrar</button>
+                    <button  type="submit" id="btnDespesas">Registrar</button>
                 </form>
             </div>
 
 
             <div class="resultados">
 
-                <div>
+                <div class="valores">
                     <ul id="valores">
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ab. Eligendi exercitationem eos ut aut qui, debitis consequuntur maxime autem architecto eaque ipsam corrupti? Praesentium, accusamus quia! Explicabo, velit minus.
-                        </li>
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, voluptas eveniet! Error harum vel illo necessitatibus sit dolores voluptate numquam dignissimos tenetur. Esse cupiditate voluptas iure debitis ipsum illum explicabo!</li>
-                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam provident deleniti odit ratione recusandae eius minima animi delectus autem eaque iusto nihil nesciunt, distinctio commodi quo quia architecto? Minus, animi?</li>
+                        
                     </ul>
 
                 </div>
-                <div>
+                <div class="despesas">
                     <ul id="despesas">
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, nisi aliquid. Suscipit commodi enim excepturi in explicabo labore similique. Esse in perferendis debitis tempora nam quas adipisci, aliquam neque voluptatum!</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptatum quae perspiciatis corporis alias fugit officiis illo, quis amet quisquam repudiandae dicta earum possimus rem at id nostrum quos facere!</li>
-                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, rem quidem enim aliquam consequuntur dolorum accusamus porro praesentium quas placeat expedita nulla non atque veniam eaque dolore odit ipsa deserunt.</li>
+                        
                     </ul>
                 </div>
 
@@ -67,6 +61,7 @@
         </div>
     </div>
 
+    <script rel="text/JavaScript" src="JS/script.js"></script>
 </body>
 
 </html>
